@@ -1,7 +1,6 @@
 'use strict';
 
 const config = require('config');
-const koaPinoLogger = require('koa-pino-logger');
 
 const loadWebpage = require('./lib/load-webpage');
 const getParrots = require('./lib/get-parrots');
@@ -19,7 +18,6 @@ if (require.main === module) {
         env: config.get('env')
       });
 
-      app.use(koaPinoLogger());
 
       app.listen(config.get('server.port'));
       logger.info(`Server started on ${SERVER_PORT}`);

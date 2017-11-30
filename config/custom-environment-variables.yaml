@@ -1,0 +1,8 @@
+env: NODE_ENV
+parrotUrl: NODE_PARROT_URL
+server:
+  host: NODE_HOST
+  port: NODE_PORT
+logger:
+  level: NODE_LOGGER_LEVEL
+  enabled: NODE_LOGGER_ENABLED

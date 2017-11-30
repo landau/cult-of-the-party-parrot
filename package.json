@@ -1,10 +1,12 @@
 {
   "name": "cult-of-the-party-parrot",
+  "private": true,
   "version": "0.0.1",
   "description": "A simple server that returns a party parrot",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive ./test"
+    "test": "mocha --recursive ./test",
+    "start": "node . | pino -c"
   },
   "repository": {
     "type": "git",
@@ -20,8 +22,10 @@
     "cheerio": "1.0.0-rc.2",
     "config": "1.28.1",
     "koa": "2.4.1",
+    "koa-pino-logger": "2.1.1",
     "koa-router": "7.3.0",
-    "node-fetch": "1.7.3"
+    "node-fetch": "1.7.3",
+    "pino": "4.10.2"
   },
   "engines": {
     "node": ">=8.0"

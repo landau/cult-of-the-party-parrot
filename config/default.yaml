@@ -1,0 +1,8 @@
+env: development
+parrotUrl: http://cultofthepartyparrot.com
+server:
+  host: 'localhost'
+  port: 8080
+logger:
+  level: info
+  enabled: true
